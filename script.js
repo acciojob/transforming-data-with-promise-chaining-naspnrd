@@ -38,10 +38,10 @@ function createInitialPromise(){
 			output.textContent = `Result: ${result}.`; // Result: 5
 			return delayPromise(result / 2, 1000);
 		}).then((result) => {
-			output.textContent = `Result: ${result}.`; // Result: 5
+			output.textContent = `Result: ${result}.`; // Result: 2.5
 			return delayPromise(result + 10, 1000);
 		})
 		.then((final) => {
-			output.textContent = `Final Result: ${final}.`; // Result: 2.5
+			output.textContent = `Final Result: ${final}.`; // Result: 12.5
 		})
 }
